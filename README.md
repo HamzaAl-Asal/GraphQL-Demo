@@ -29,4 +29,4 @@
 }
 
 <-----------------------------------------------------------------------------------------------------------------------------------------------------------------<
-*)=> Don`t forget to add your conn string and excecute update-database command to reflect the entities in you Database.
+*)=> Don`t forget to add your conn string in the appsettings.json and excecute update-database command to reflect the entities in your Database.
