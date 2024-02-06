@@ -15,7 +15,7 @@ namespace GraphQL.Demo.App
             // repos registration
             services.AddScoped<IAuthorRepository, AuthorRepository>();
 
-            // services registration
+            // graphQL types registration
             services.AddScoped<AuthorType>();
             services.AddScoped<BookType>();
 
