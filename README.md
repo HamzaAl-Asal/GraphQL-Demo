@@ -1,5 +1,5 @@
 
-*)=> NOTE: I`m using Altair UI, so once you run the application you need to change the route from "/swagger/index.html" to be "/ui/altair".
+*)=> NOTE: I`m using Altair UI, so once you run the application the default page will be altair ui with route "/ui/altair".
 <-----------------------------------------------------------------------------------------------------------------------------------------------------------------<
 
 *)=> Needed Json format to retrieve excpected data - add it into altair ui left window and then you can choos Post Or Get verb (You can remove or add the property as you want to retrieve it by the json):-
