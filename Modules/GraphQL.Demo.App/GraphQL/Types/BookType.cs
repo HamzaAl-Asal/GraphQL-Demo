@@ -7,6 +7,11 @@ namespace GraphQL.Demo.App.GraphQL.Types
     {
         public BookType()
         {
+            DefineFields();
+        }
+
+        private void DefineFields()
+        {
             Field(x => x.Id);
             Field(x => x.Name);
             Field(x => x.Description);

@@ -6,7 +6,6 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<GraphQLDemoDbContext>(e =>
            e.UseSqlServer(builder.Configuration.GetConnectionString("GraphQLDemoDbContext")));
@@ -18,8 +17,6 @@ var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
     app.UseGraphQLAltair();
 }
 

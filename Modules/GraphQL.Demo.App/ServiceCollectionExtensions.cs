@@ -20,7 +20,10 @@ namespace GraphQL.Demo.App
             services.AddScoped<BookType>();
 
             // schema registration
-            services.AddScoped<ISchema, AppSchema>(services => new AppSchema(new SelfActivatingServiceProvider(services)));
+            services.AddScoped<ISchema, AppSchema>(services =>
+                new AppSchema(
+                    new SelfActivatingServiceProvider(services)));
+
             services.AddGraphQL(options =>
             {
                 options.EnableMetrics = false;
